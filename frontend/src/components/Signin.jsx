@@ -8,8 +8,8 @@ import fetchCall from "../utils"
 import { login } from "../redux/actions"
 
 const Signin = () => {
-	const [email, setEmail] = useState("yash@gmail.com")
-	const [password, setPassword] = useState("password")
+	const [email, setEmail] = useState("")
+	const [password, setPassword] = useState("")
 	const [success, setSuccess] = useState(false)
 
 	const dispatch = useDispatch()
