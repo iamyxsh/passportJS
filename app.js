@@ -30,8 +30,8 @@ app.use(cors()) //CORS for development
 passportUtil(passport)
 app.use(passport.initialize())
 
-app.use("/api", authRoute) //Addition Route
-app.use("/api", protectedRoute) //Addition Route
+app.use("/api", authRoute)
+app.use("/api", protectedRoute)
 
 app.use(errorController)
 
