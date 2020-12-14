@@ -7,6 +7,8 @@ import { updateNum } from "../redux/actions"
 
 const Dashboard = () => {
 	const num = useSelector((state) => state.user.num)
+	const name = useSelector((state) => state.user.name)
+	const email = useSelector((state) => state.user.email)
 	const token = useSelector((state) => state.user.token)
 
 	const dispatch = useDispatch()
@@ -45,6 +47,8 @@ const Dashboard = () => {
 			>
 				Decrement
 			</Button>
+			<Typography variant="h3">{name}</Typography>
+			<Typography variant="h3">{email}</Typography>
 		</Container>
 	)
 }

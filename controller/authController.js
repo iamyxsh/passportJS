@@ -46,6 +46,7 @@ exports.signin = asyncHandler(async (req, res) => {
 					id: user._id,
 					name: user.name,
 					num: user.num,
+					email: user.email,
 					token,
 				},
 			})
